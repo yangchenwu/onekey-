@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bk"
+     >
+
+    <RelativeLayout
+        android:id="@+id/rl_info_view"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#ffe85628" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="详细信息"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_info_exit"
+           android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/register_bottom_arrow" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_info_image"
+        android:layout_below="@id/rl_info_view"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/bg_logout_normal" />
+    <EditText
+          android:layout_marginTop="10dp"
+          android:id="@+id/et_info_iconName"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/iv_info_image"
+          android:layout_centerHorizontal="true"
+          android:background="#00000000"
+       
+          android:hint="改个名字~" >
+
+          <requestFocus />
+      </EditText>
+
+    <EditText
+        android:layout_marginTop="40dp"
+        android:id="@+id/et_info_username"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/et_info_iconName"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:drawableLeft="@drawable/login_icon_account"
+        android:drawablePadding="25dip"
+        android:hint="请输入用户名"
+        android:paddingLeft="15dip"
+        android:shadowDx="0.0"
+        android:shadowDy="1.0"
+        android:shadowRadius="1.0"
+        android:textColorHint="#ffdddddd" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_below="@id/et_info_username"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/base_horization_line" />
+
+    <EditText
+        android:id="@+id/et_info_password"
+        android:layout_below="@id/view_line"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:drawableLeft="@drawable/login_icon_password"
+        android:drawablePadding="25dip"
+        android:hint="请出入密码"
+      
+        android:paddingLeft="15dip"
+        android:textColorHint="#ffdddddd" />
+
+   
+    
+    
+
+    <TextView
+        android:clickable="true"
+        android:id="@+id/tv_info_delete"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+      android:layout_gravity="bottom"
+        android:background="#ffe85628"
+        android:gravity="center"
+        android:text="删除"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+     <View
+         android:id="@+id/view_line2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+       android:layout_above="@id/tv_info_delete"
+        android:background="@drawable/base_horization_line" />
+     
+     
+      <TextView
+        android:clickable="true"
+        android:id="@+id/tv_info_sava"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+      android:layout_gravity="bottom"
+        android:background="#ffe85628"
+        android:gravity="center"
+        android:text="保存修改"
+        android:layout_above="@id/view_line2"
+    
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+     
+     
+      
+
+      
+
+</RelativeLayout>

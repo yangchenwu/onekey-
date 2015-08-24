@@ -1,0 +1,36 @@
+# view AndroidManifest.xml #generated:10
+-keep class android.test.InstrumentationTestRunner { <init>(...); }
+
+# view AndroidManifest.xml #generated:50
+-keep class com.wcy.onekey.AddActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:52
+-keep class com.wcy.onekey.EditActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:48
+-keep class com.wcy.onekey.InfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:29
+-keep class com.wcy.onekey.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:31
+-keep class com.wcy.onekey.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:35
+-keep class com.wcy.onekey.RegisterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:46
+-keep class com.wcy.onekey.SettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:37
+-keep class com.wcy.onekey.SplashActivity { <init>(...); }
+
+# view res/layout/welocme_view.xml #generated:83
+-keep class com.wcy.onekey.ui.KeyBoardGridView { <init>(...); }
+
+# view res/layout/add_view.xml #generated:33
+-keep class com.wcy.onekey.ui.MyGridView { <init>(...); }
+
+# view AndroidManifest.xml #generated:55
+-keep class com.wcy.onekey.welcomeActivity { <init>(...); }
+

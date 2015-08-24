@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tv_welcome_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="请输入密码"
+        android:gravity="center_horizontal" />
+    <EditText 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:focusable="false"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            
+            android:digits="0123456789"
+            android:id="@+id/et_welcome_onekey1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <EditText
+            android:digits="0123456789"
+            android:id="@+id/et_welcome_onekey2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <EditText
+            android:digits="0123456789"
+            android:id="@+id/et_welcome_onekey3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <EditText
+            android:digits="0123456789"
+            android:id="@+id/et_welcome_onekey4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <EditText
+            android:digits="0123456789"
+            android:id="@+id/et_welcome_onekey5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <EditText
+            android:digits="0123456789"
+            android:id="@+id/et_welcome_onekey6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+    
+    <Button 
+        android:id="@+id/bt_welcome_sava"
+        android:layout_marginTop="20dp"
+       android:layout_gravity="center_horizontal"
+         android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffe85628"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:text="保存"
+        />
+    
+    <com.wcy.onekey.ui.KeyBoardGridView
+        android:layout_marginTop="10dp"
+        android:id="@+id/gv_keyboard"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:numColumns="5"
+         android:gravity="center"
+          android:verticalSpacing="5dp"
+        
+        />
+
+</LinearLayout>
